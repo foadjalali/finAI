@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Meharan Alidoost Nia",
+        "role": "Product Lead",
+        "avatar": "/images/team/Mehran.webp",
+        "linkedin": "https://www.linkedin.com/in/example"
+    },
+    {
+        "id": 2,
+        "name": "Foad Jalali",
+        "role": "Founder, Technical Lead",
+        "avatar": "/images/team/Foad.webp",
+        "linkedin": "https://www.linkedin.com/in/foadjalali/"
+    },
+    {
+        "id": 3,
+        "name": "Siavash Eghbal",
+        "role": "AI Engineer",
+        "avatar": "/images/team/Siavash.webp",
+        "linkedin": "https://www.linkedin.com/in/example"
+    },
+    {
+        "id": 4,
+        "name": "Arman Cham Heidai",
+        "role": "UX Designer",
+        "avatar": "/images/team/Arman.webp",
+        "linkedin": "https://www.linkedin.com/in/example"
+    }
+]
