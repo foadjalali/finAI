@@ -19,12 +19,6 @@ const caveat = Caveat({
   display: "swap",
 })
 
-export const metadata: Metadata = {
-  title: "Cliste - AI Automation for Enterprise",
-  description:
-    "Transform your business with intelligent AI automation solutions. Empower your organization to operate at the speed of thought.",
-  generator: "v0.app",
-}
 
 export default function RootLayout({
   children,
