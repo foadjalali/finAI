@@ -6,6 +6,7 @@ import { PageTransition } from "@/components/page-transition"
 import { NavigationTransition } from "@/components/navigation-transition"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Dancing_Script, Caveat } from "next/font/google"
+import { Footer } from "react-day-picker"
 
 const dancingScript = Dancing_Script({
   subsets: ["latin"],

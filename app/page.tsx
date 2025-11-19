@@ -1,5 +1,4 @@
 import { GlassmorphismNav } from "@/components/glassmorphism-nav"
-import { HeroSection } from "@/components/hero-section"
 import { ProblemSolutionSection } from "@/components/problem-solution-section"
 import Aurora from "@/components/Aurora"
 import { FeaturesSection } from "@/components/features-section"
@@ -14,6 +13,8 @@ import { StickyScrollRevealDemo } from "@/components/sticky-scroll"
 import FinGPTContactForm from "@/components/contact-form"
 import TeamSection from "@/components/TeamSection"
 import { Metadata } from "next"
+import PricingSection from "@/components/pricing/PricingCard"
+import { HeroSection } from "@/components/hero-section"
 
 export const metadata = {
   // metadataBase: new URL("https://fingpt.ai"),
@@ -97,8 +98,9 @@ export default function HomePage() {
           {/* <FeaturesSection /> */}
           <TestimonialsSection />
           <FaqSection />
-          <TeamSection />
-          <FinGPTContactForm />
+          {/* <TeamSection /> */}
+          <PricingSection />
+          {/* <FinGPTContactForm /> */}
           {/* <ROICalculatorSection /> */}
           <CTASection />
           <Footer />

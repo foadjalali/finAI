@@ -21,10 +21,10 @@ export default function TeamSection() {
     <section className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
       {/* هدر سکشن */}
       <div className="mb-12 text-center">
-        <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs text-white/70">
+        {/* <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs text-white/70">
           <span className="inline-block h-2 w-2 rounded-full bg-violet-400" />
           Our Team
-        </div>
+        </div> */}
 
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white">
           <span className="block">Meet the Team Making</span>

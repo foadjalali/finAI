@@ -32,10 +32,10 @@ export default function FaqSection({
       <div className="grid gap-10 lg:grid-cols-2">
         {/* Left: heading */}
         <div>
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs text-white/70">
+          {/* <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs text-white/70">
             <span className="inline-block h-2 w-2 rounded-full bg-violet-400" />
             {badge}
-          </div>
+          </div> */}
 
           <h2 className="text-4xl leading-[1.1] font-bold text-white md:text-6xl">
             <span className="block">{titleTop}</span>

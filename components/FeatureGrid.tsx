@@ -141,10 +141,10 @@ export default function FeatureGrid() {
         className={`text-center mb-12 sm:mb-20 transition-all duration-1000 opacity-100 translate-y-0"
             }`}
       >
-        <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm font-medium mb-6">
+        {/* <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm font-medium mb-6">
           <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
           Our Key Featues
-        </div>
+        </div> */}
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white text-balance mb-4 sm:mb-6">
           <span className="text-green-400">AI-Driven Tools</span> for an Intelligent Financial Life
         </h2>

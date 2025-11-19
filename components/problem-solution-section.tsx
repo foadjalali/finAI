@@ -72,10 +72,10 @@ export function ProblemSolutionSection() {
           className={`text-center mb-12 sm:mb-20 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
         >
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm font-medium mb-6">
+          {/* <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm font-medium mb-6">
             <span className="w-2 h-2 bg-red-400 rounded-full mr-2 animate-pulse"></span>
             The Problem Every Business Faces
-          </div>
+          </div> */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white text-balance mb-4 sm:mb-6">
             <span className="text-red-400">You’re Working Hard</span> But Your Money Isn’t
           </h2>
@@ -209,13 +209,15 @@ export function ProblemSolutionSection() {
           <p className="text-sm sm:text-base md:text-lg text-white/70 mb-6 sm:mb-8 max-w-2xl mx-auto font-light leading-relaxed">
             Get a free response time audit and see exactly how many leads you're missing right now.
           </p>
-          <Button
-            size="lg"
-            className="bg-white text-black rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium transition-all duration-300 hover:bg-gray-50 hover:scale-105 hover:shadow-lg group cursor-pointer"
+          <a
+            href="https://chat.fingpt.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 bg-white text-black rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium transition-all duration-300 hover:bg-gray-50 hover:scale-105 hover:shadow-lg cursor-pointer"
           >
-            Get Free Response Audit
+            Try FinGPT
             <ArrowRight />
-          </Button>
+          </a>
         </div>
       </div>
     </section>

@@ -21,7 +21,7 @@ const content = [
     {
         title: "Predictive Money Insights",
         description:
-            "Get ahead of your finances with AI-powered predictions. FinGPT forecasts cash-flow risks, detects unusual activity, and highlights upcoming opportunities—before they happen.",
+            "Get ahead of your finances with AI-powered predictions. FinGPT forecasts cash-flow risks, detects unusual activity, and highlights upcoming opportunities, before they happen.",
         content: (
             <img
                 src="/images/home/2.webp"
@@ -49,7 +49,7 @@ const content = [
     {
         title: "Unified Financial Dashboard",
         description:
-            "All your bank accounts, cards, investments, and spending trends—connected in one intelligent hub. FinGPT gives you full clarity with a clean, data-rich dashboard.",
+            "All your bank accounts, cards, investments, and spending trends, connected in one intelligent hub. FinGPT gives you full clarity with a clean, data-rich dashboard.",
         content: (
             <img
                 src="/images/home/4.webp"

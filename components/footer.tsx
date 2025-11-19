@@ -20,16 +20,16 @@ const footerLinks: FooterSection[] = [
   {
     label: "Product",
     links: [
-      { title: "Features", href: "/features" },
-      { title: "AI Team", href: "/ai-team" },
-      { title: "ROI Calculator", href: "/roi-calculator" },
-      { title: "Integration", href: "/integration" },
+      { title: "FinGPT", href: "/fingpt" },
+      // { title: "AI Team", href: "/ai-team" },
+      // { title: "ROI Calculator", href: "/roi-calculator" },
+      // { title: "Integration", href: "/integration" },
     ],
   },
   {
     label: "Company",
     links: [
-      { title: "About Us", href: "/about" },
+      // { title: "About Us", href: "/about" },
       { title: "Contact", href: "/contact" },
       { title: "Privacy Policy", href: "/privacy" },
       { title: "Terms of Service", href: "/terms" },
@@ -38,10 +38,10 @@ const footerLinks: FooterSection[] = [
   {
     label: "Resources",
     links: [
-      { title: "Blog", href: "/blog" },
-      { title: "Case Studies", href: "/case-studies" },
-      { title: "Documentation", href: "/docs" },
-      { title: "Support", href: "/support" },
+      { title: "Blog", href: "/fingpt" },
+      // { title: "Case Studies", href: "/case-studies" },
+      { title: "Developers", href: "/docs" },
+      // { title: "Support", href: "/support" },
     ],
   },
   {
@@ -62,9 +62,15 @@ export function Footer() {
 
       <div className="grid w-full gap-8 xl:grid-cols-3 xl:gap-8">
         <AnimatedContainer className="space-y-4">
-          <Image src="/images/cliste-logo.png" alt="Cliste Logo" width={64} height={64} className="size-16" />
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none">
+            <rect width="30" height="30" fill="#4d4d4dff" rx="8">
+            </rect>
+            <path fill="#fff" d="M13.817 7h8.727v5.818h-8.727zM13.817 17.182h8.728V23h-2.91a5.818 5.818 0 0 1-5.818-5.818Z"></path>
+            <path fill="#fff" d="M8 17.182h5.818V23H8z"></path>
+            <path fill="#fff" d="M13.818 17.182A5.818 5.818 0 0 1 8 11.364V7h5.818v10.182Z"></path>
+          </svg>
           <div className="text-muted-foreground mt-8 text-sm md:mt-0 md:block hidden">
-            <p>© {new Date().getFullYear()} Cliste. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} FinGPT. All rights reserved.</p>
           </div>
         </AnimatedContainer>
 
@@ -94,11 +100,11 @@ export function Footer() {
 
       <div className="md:hidden mt-8 text-center space-y-2">
         <p className="text-muted-foreground text-sm">© {new Date().getFullYear()} Cliste. All rights reserved.</p>
-        <p className="text-muted-foreground text-xs">Web Development by Humexa</p>
+        <p className="text-muted-foreground text-xs">Web Development by TechnomindAI</p>
       </div>
 
       <div className="hidden md:block mt-8 pt-6 border-t border-foreground/10 w-full">
-        <p className="text-muted-foreground text-xs text-center">Web Development by Humexa</p>
+        <p className="text-muted-foreground text-xs text-center">Web Development by TechnomindAI</p>
       </div>
     </footer>
   )
