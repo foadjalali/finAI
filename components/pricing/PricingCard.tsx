@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Check, Zap, Shield, Server } from "lucide-react";
-import HeroSection from "./HeroSection";
+import HeroSection from "./CustomHeroSection";
 
 type PricingCardProps = {
     title: string;
@@ -165,19 +165,7 @@ export default function PricingSection() {
     const plans = tab === "individual" ? individualPlans : apiPlans;
 
     return (
-        <section className="max-w-6xl mx-auto px-6 py-4">
-            <div
-                className={`text-center mb-12 sm:mb-20 transition-all duration-1000 opacity-100 translate-y-0"
-            }`}
-            >
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white text-balance mb-4 sm:mb-6">
-                    <span className="text-green-400">Find the Right Plan</span> for Your Goals
-                </h2>
-                <p className="text-base sm:text-lg md:text-xl text-white/70 max-w-3xl mx-auto font-light leading-relaxed">
-                    Explore flexible pricing options designed to scale with your project or business.                </p>
-            </div>
-
-
+        <section className="max-w-6xl mx-auto px-6 py-4 mt-16">
             {/* Tabs */}
             <div className="flex justify-center mb-10">
                 <div className="inline-flex bg-neutral-800/60 border border-white/10 rounded-xl p-1">

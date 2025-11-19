@@ -3,7 +3,7 @@ import FinGPTContactForm from "@/components/contact-form";
 import { CTASection } from "@/components/cta-section";
 import { Footer } from "@/components/footer";
 import { GlassmorphismNav } from "@/components/glassmorphism-nav";
-import HeroSection from "@/components/pricing/HeroSection";
+import HeroSection from "@/components/pricing/CustomHeroSection";
 
 export default function HomePage() {
     return (

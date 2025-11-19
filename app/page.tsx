@@ -99,6 +99,18 @@ export default function HomePage() {
           <TestimonialsSection />
           <FaqSection />
           {/* <TeamSection /> */}
+          <section className="mx-auto max-w-7xl px-4 mt-8 sm:px-6 lg:px-8">
+            <div
+              className={`text-center mb-12 sm:mb-20 transition-all duration-1000 opacity-100 translate-y-0"
+            }`}
+            >
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white text-balance mb-4 sm:mb-6">
+                <span className="text-green-400">AI-Driven Tools</span> for an Intelligent Financial Life
+              </h2>
+              <p className="text-base sm:text-lg md:text-xl text-white/70 max-w-3xl mx-auto font-light leading-relaxed">
+                FinGPT brings intelligence, automation, and clarity to every part of your financial journey.        </p>
+            </div>
+          </section>
           <PricingSection />
           {/* <FinGPTContactForm /> */}
           {/* <ROICalculatorSection /> */}

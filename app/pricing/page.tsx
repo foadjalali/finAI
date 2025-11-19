@@ -2,6 +2,7 @@ import Aurora from "@/components/Aurora";
 import { CTASection } from "@/components/cta-section";
 import { Footer } from "@/components/footer";
 import { GlassmorphismNav } from "@/components/glassmorphism-nav";
+import CustomHeroSection from "@/components/pricing/CustomHeroSection";
 import PricingSection from "@/components/pricing/PricingCard";
 
 export const metadata = {
@@ -69,13 +70,20 @@ export const metadata = {
 
 export default function Pricing() {
     return (
-        <div className="min-h-screen bg-black overflow-hidden mt-32">
+        <div className="min-h-screen bg-black overflow-hidden">
             <main className="min-h-screen relative overflow-hidden">
                 <div className="fixed inset-0 w-full h-full">
                     <Aurora colorStops={["#270036", "#210029", "#270036"]} amplitude={1.2} blend={0.6} speed={0.8} />
                 </div>
                 <div className="relative z-10">
                     <GlassmorphismNav />
+                    <CustomHeroSection
+                        title={<>
+                            <span className="block text-green-400">Find the Right Plan</span>
+                            <span className="block text">for Your Goals</span>
+                        </>}
+                        subtitle="Reach out with any questions, feedback, or support needs, our team will respond quickly."
+                    />
                     <PricingSection />
                     <CTASection />
                     <Footer />
