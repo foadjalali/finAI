@@ -32,11 +32,6 @@ export default function FaqSection({
       <div className="grid gap-10 lg:grid-cols-2">
         {/* Left: heading */}
         <div>
-          {/* <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs text-white/70">
-            <span className="inline-block h-2 w-2 rounded-full bg-violet-400" />
-            {badge}
-          </div> */}
-
           <h2 className="text-4xl leading-[1.1] font-bold text-white md:text-6xl">
             <span className="block">{titleTop}</span>
             <span className="block text-white/80">{titleBottom}</span>
@@ -61,11 +56,29 @@ export default function FaqSection({
 function FaqItemCard({ idx, q, a }: { idx: number; q: string; a: string }) {
   const [open, setOpen] = useState(false);
 
+  // toggle helper
+  const toggle = () => setOpen((v) => !v);
+
+  // keyboard handler for accessibility (Enter / Space)
+  const onKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      toggle();
+    }
+  };
+
   return (
     <div
-      className="group relative overflow-hidden rounded-3xl bg-[#0d0d12]/80 p-4 sm:p-6
+      // container is clickable now
+      onClick={toggle}
+      onKeyDown={onKeyDown}
+      role="button"
+      tabIndex={0}
+      aria-expanded={open}
+      aria-controls={`faq-${idx}`}
+      className="group relative cursor-pointer overflow-hidden rounded-3xl bg-[#0d0d12]/80 p-4 sm:p-6
                  border border-white/10 backdrop-blur
-                 shadow-[0_0_0_1px_rgba(255,255,255,0.04)]"
+                 shadow-[0_0_0_1px_rgba(255,255,255,0.04)] focus:outline-none focus:ring-2 focus:ring-white/10"
     >
       {/* gradient border like the screenshot */}
       <div
@@ -81,25 +94,27 @@ function FaqItemCard({ idx, q, a }: { idx: number; q: string; a: string }) {
         }}
       />
 
-      <button
-        onClick={() => setOpen((v) => !v)}
-        className="flex w-full items-center justify-between gap-6 text-left"
-        aria-expanded={open}
-        aria-controls={`faq-${idx}`}
-      >
+      {/* Note: the inner button stops propagation to avoid double toggles when clicking the icon area */}
+      <div className="flex w-full items-center justify-between gap-6 text-left">
         <span className="text-base sm:text-lg text-white">{q}</span>
-        <span
+
+        <button
+          onClick={(e) => {
+            e.stopPropagation(); // prevent bubbling to outer div
+            toggle();
+          }}
+          aria-label={open ? "Collapse answer" : "Expand answer"}
           className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/5
                      text-white/80 transition-all duration-300 group-hover:bg-white/10"
         >
           {open ? <Minus className="h-4 w-4" /> : <Plus className="h-4 w-4" />}
-        </span>
-      </button>
+        </button>
+      </div>
 
       {/* answer */}
       <div
         id={`faq-${idx}`}
-        className={`transition-all duration-1000 ease-out overflow-hidden ${open ? "mt-3 max-h-64 opacity-100" : "max-h-0 opacity-0"}`}
+        className={`transition-all duration-300 ease-out overflow-hidden ${open ? "mt-3 max-h-64 opacity-100" : "max-h-0 opacity-0"}`}
       >
         <p className="text-sm leading-7 text-white/70">{a}</p>
       </div>
